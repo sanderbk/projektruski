@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.MaakKlant = new System.Windows.Forms.Button();
-            this.FilterKlant = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.VerwijderKlant = new System.Windows.Forms.Button();
@@ -46,6 +44,8 @@
             this.VerwijderMedicatie = new System.Windows.Forms.Button();
             this.FilterMedicatie = new System.Windows.Forms.Button();
             this.MaakMedicatie = new System.Windows.Forms.Button();
+            this.MaakKlant = new System.Windows.Forms.Button();
+            this.FilterKlant = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -64,25 +64,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(500, 117);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // MaakKlant
-            // 
-            this.MaakKlant.Location = new System.Drawing.Point(12, 168);
-            this.MaakKlant.Name = "MaakKlant";
-            this.MaakKlant.Size = new System.Drawing.Size(75, 23);
-            this.MaakKlant.TabIndex = 1;
-            this.MaakKlant.Text = "Add";
-            this.MaakKlant.UseVisualStyleBackColor = true;
-            this.MaakKlant.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // FilterKlant
-            // 
-            this.FilterKlant.Location = new System.Drawing.Point(93, 168);
-            this.FilterKlant.Name = "FilterKlant";
-            this.FilterKlant.Size = new System.Drawing.Size(75, 23);
-            this.FilterKlant.TabIndex = 2;
-            this.FilterKlant.Text = "Filter";
-            this.FilterKlant.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -115,6 +96,7 @@
             this.VerwijderKlant.TabIndex = 5;
             this.VerwijderKlant.Text = "Remove";
             this.VerwijderKlant.UseVisualStyleBackColor = true;
+            this.VerwijderKlant.Click += new System.EventHandler(this.VerwijderKlant_Click);
             // 
             // BewerkKlant
             // 
@@ -124,6 +106,7 @@
             this.BewerkKlant.TabIndex = 6;
             this.BewerkKlant.Text = "Edit";
             this.BewerkKlant.UseVisualStyleBackColor = true;
+            this.BewerkKlant.Click += new System.EventHandler(this.BewerkKlant_Click);
             // 
             // label2
             // 
@@ -230,11 +213,33 @@
             this.MaakMedicatie.Text = "Add";
             this.MaakMedicatie.UseVisualStyleBackColor = true;
             // 
+            // MaakKlant
+            // 
+            this.MaakKlant.Location = new System.Drawing.Point(12, 168);
+            this.MaakKlant.Name = "MaakKlant";
+            this.MaakKlant.Size = new System.Drawing.Size(75, 23);
+            this.MaakKlant.TabIndex = 18;
+            this.MaakKlant.Text = "Add";
+            this.MaakKlant.UseVisualStyleBackColor = true;
+            this.MaakKlant.Click += new System.EventHandler(this.MaakKlant_Click);
+            // 
+            // FilterKlant
+            // 
+            this.FilterKlant.Location = new System.Drawing.Point(93, 168);
+            this.FilterKlant.Name = "FilterKlant";
+            this.FilterKlant.Size = new System.Drawing.Size(75, 23);
+            this.FilterKlant.TabIndex = 19;
+            this.FilterKlant.Text = "Filter";
+            this.FilterKlant.UseVisualStyleBackColor = true;
+            this.FilterKlant.Click += new System.EventHandler(this.FilterKlant_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(531, 581);
+            this.Controls.Add(this.FilterKlant);
+            this.Controls.Add(this.MaakKlant);
             this.Controls.Add(this.BewerkMedicatie);
             this.Controls.Add(this.VerwijderMedicatie);
             this.Controls.Add(this.FilterMedicatie);
@@ -250,8 +255,6 @@
             this.Controls.Add(this.VerwijderKlant);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.FilterKlant);
-            this.Controls.Add(this.MaakKlant);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Gezondheidszorg Database applicatie";
@@ -267,8 +270,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button MaakKlant;
-        private System.Windows.Forms.Button FilterKlant;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button VerwijderKlant;
@@ -284,6 +285,8 @@
         private System.Windows.Forms.Button VerwijderMedicatie;
         private System.Windows.Forms.Button FilterMedicatie;
         private System.Windows.Forms.Button MaakMedicatie;
+        private System.Windows.Forms.Button MaakKlant;
+        private System.Windows.Forms.Button FilterKlant;
     }
 }
 

@@ -42,14 +42,21 @@ namespace WindowsFormsApp1
             dataGridView1.Columns["VerzekeringsID"].Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+        private void MaakKlant_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FilterKlant_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
