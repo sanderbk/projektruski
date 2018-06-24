@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -21,12 +22,13 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Klanten k = new Klanten();
-            // k.Naam = "Sander Baak";
-            // k.Plaats = "Alkmaar";
-            // k.Adres = "Mogool 10";
-            // con.klanten.Add(k);
-            // con.SaveChanges();
+            Klanten k = new Klanten();
+            //k.Voornaam = "Sander";
+            //k.Achternaam = "Baak";
+            //k.Plaats = "Alkmaar";
+            //k.Adres = "Mogool 10";
+            con.klanten.Add(k);
+             con.SaveChanges();
             KlantenGridView.DataSource = con.klanten.Select(p => new {
                 KlantID = p.KlantID,
                 ArtsID = p.ArtsID,
@@ -55,7 +57,7 @@ namespace WindowsFormsApp1
             string verzekeringsid = VoornaamtxtKlant.Text;
             string plaats = VoornaamtxtKlant.Text;
             string adres = VoornaamtxtKlant.Text;
-            Database klantdb = new Database();
+            
 
             if (verzekeringsid != null && voornaam != null && achternaam != null && plaats != null && adres != null)
             {
@@ -65,12 +67,12 @@ namespace WindowsFormsApp1
                 k.Adres = adres;
                 k.Plaats = plaats;
 
-                klantdb.klanten.Add(k);
-                klantdb.SaveChanges();
-                KlantenGridView.DataSource = klantdb.Klanten.ToList();
+                con.klanten.Add(k);
+                con.SaveChanges();
+                KlantenGridView.DataSource = k.ToList();
 
                 voornaam = ""; achternaam = ""; verzekeringsid = ""; plaats = ""; adres = "";
-                klantdb.Items.Add(voornaam);
+                k.Items.Add(voornaam);
             }
 
         }
