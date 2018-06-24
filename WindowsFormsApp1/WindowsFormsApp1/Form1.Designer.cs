@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.KlantenGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.ArtsenGridview = new System.Windows.Forms.DataGridView();
             this.VerwijderKlant = new System.Windows.Forms.Button();
             this.BewerkKlant = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.MedicatieGridView = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.BewerkArts = new System.Windows.Forms.Button();
             this.VerwijderArts = new System.Windows.Forms.Button();
@@ -46,12 +46,12 @@
             this.MaakMedicatie = new System.Windows.Forms.Button();
             this.MaakKlant = new System.Windows.Forms.Button();
             this.FilterKlant = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.VerzekeringsidtxtKlant = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.VoornaamtxtKlant = new System.Windows.Forms.TextBox();
+            this.AchternaamtxtKlant = new System.Windows.Forms.TextBox();
+            this.PlaatstxtKlant = new System.Windows.Forms.TextBox();
+            this.AdrestxtKlant = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -60,28 +60,28 @@
             this.Klantentab = new System.Windows.Forms.TabPage();
             this.Artsentab = new System.Windows.Forms.TabPage();
             this.Medicatietab = new System.Windows.Forms.TabPage();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KlantenGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ArtsenGridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MedicatieGridView)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.Klantentab.SuspendLayout();
             this.Artsentab.SuspendLayout();
             this.Medicatietab.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // KlantenGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 35);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(500, 230);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.KlantenGridView.AllowUserToAddRows = false;
+            this.KlantenGridView.AllowUserToDeleteRows = false;
+            this.KlantenGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.KlantenGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.KlantenGridView.Location = new System.Drawing.Point(6, 35);
+            this.KlantenGridView.Name = "KlantenGridView";
+            this.KlantenGridView.ReadOnly = true;
+            this.KlantenGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.KlantenGridView.Size = new System.Drawing.Size(500, 230);
+            this.KlantenGridView.TabIndex = 0;
+            this.KlantenGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -93,18 +93,18 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Klanten";
             // 
-            // dataGridView2
+            // ArtsenGridview
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 33);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(500, 238);
-            this.dataGridView2.TabIndex = 4;
+            this.ArtsenGridview.AllowUserToAddRows = false;
+            this.ArtsenGridview.AllowUserToDeleteRows = false;
+            this.ArtsenGridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.ArtsenGridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ArtsenGridview.Location = new System.Drawing.Point(3, 33);
+            this.ArtsenGridview.Name = "ArtsenGridview";
+            this.ArtsenGridview.ReadOnly = true;
+            this.ArtsenGridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ArtsenGridview.Size = new System.Drawing.Size(500, 238);
+            this.ArtsenGridview.TabIndex = 4;
             // 
             // VerwijderKlant
             // 
@@ -136,18 +136,18 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Artsen";
             // 
-            // dataGridView3
+            // MedicatieGridView
             // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(6, 35);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView3.Size = new System.Drawing.Size(500, 239);
-            this.dataGridView3.TabIndex = 8;
+            this.MedicatieGridView.AllowUserToAddRows = false;
+            this.MedicatieGridView.AllowUserToDeleteRows = false;
+            this.MedicatieGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.MedicatieGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.MedicatieGridView.Location = new System.Drawing.Point(6, 35);
+            this.MedicatieGridView.Name = "MedicatieGridView";
+            this.MedicatieGridView.ReadOnly = true;
+            this.MedicatieGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.MedicatieGridView.Size = new System.Drawing.Size(500, 239);
+            this.MedicatieGridView.TabIndex = 8;
             // 
             // label3
             // 
@@ -259,12 +259,12 @@
             this.FilterKlant.UseVisualStyleBackColor = true;
             this.FilterKlant.Click += new System.EventHandler(this.FilterKlant_Click);
             // 
-            // textBox1
+            // VerzekeringsidtxtKlant
             // 
-            this.textBox1.Location = new System.Drawing.Point(609, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 20;
+            this.VerzekeringsidtxtKlant.Location = new System.Drawing.Point(609, 34);
+            this.VerzekeringsidtxtKlant.Name = "VerzekeringsidtxtKlant";
+            this.VerzekeringsidtxtKlant.Size = new System.Drawing.Size(100, 20);
+            this.VerzekeringsidtxtKlant.TabIndex = 20;
             // 
             // label4
             // 
@@ -275,33 +275,33 @@
             this.label4.TabIndex = 21;
             this.label4.Text = "Verzekeringsid";
             // 
-            // textBox2
+            // VoornaamtxtKlant
             // 
-            this.textBox2.Location = new System.Drawing.Point(609, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 22;
+            this.VoornaamtxtKlant.Location = new System.Drawing.Point(609, 60);
+            this.VoornaamtxtKlant.Name = "VoornaamtxtKlant";
+            this.VoornaamtxtKlant.Size = new System.Drawing.Size(100, 20);
+            this.VoornaamtxtKlant.TabIndex = 22;
             // 
-            // textBox3
+            // AchternaamtxtKlant
             // 
-            this.textBox3.Location = new System.Drawing.Point(609, 86);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 23;
+            this.AchternaamtxtKlant.Location = new System.Drawing.Point(609, 86);
+            this.AchternaamtxtKlant.Name = "AchternaamtxtKlant";
+            this.AchternaamtxtKlant.Size = new System.Drawing.Size(100, 20);
+            this.AchternaamtxtKlant.TabIndex = 23;
             // 
-            // textBox4
+            // PlaatstxtKlant
             // 
-            this.textBox4.Location = new System.Drawing.Point(609, 112);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 24;
+            this.PlaatstxtKlant.Location = new System.Drawing.Point(609, 112);
+            this.PlaatstxtKlant.Name = "PlaatstxtKlant";
+            this.PlaatstxtKlant.Size = new System.Drawing.Size(100, 20);
+            this.PlaatstxtKlant.TabIndex = 24;
             // 
-            // textBox5
+            // AdrestxtKlant
             // 
-            this.textBox5.Location = new System.Drawing.Point(609, 138);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 25;
+            this.AdrestxtKlant.Location = new System.Drawing.Point(609, 138);
+            this.AdrestxtKlant.Name = "AdrestxtKlant";
+            this.AdrestxtKlant.Size = new System.Drawing.Size(100, 20);
+            this.AdrestxtKlant.TabIndex = 25;
             // 
             // label5
             // 
@@ -352,7 +352,7 @@
             // 
             // Klantentab
             // 
-            this.Klantentab.Controls.Add(this.dataGridView1);
+            this.Klantentab.Controls.Add(this.KlantenGridView);
             this.Klantentab.Controls.Add(this.label8);
             this.Klantentab.Controls.Add(this.label1);
             this.Klantentab.Controls.Add(this.label7);
@@ -360,13 +360,13 @@
             this.Klantentab.Controls.Add(this.label6);
             this.Klantentab.Controls.Add(this.BewerkKlant);
             this.Klantentab.Controls.Add(this.label5);
-            this.Klantentab.Controls.Add(this.textBox5);
+            this.Klantentab.Controls.Add(this.AdrestxtKlant);
             this.Klantentab.Controls.Add(this.MaakKlant);
-            this.Klantentab.Controls.Add(this.textBox4);
+            this.Klantentab.Controls.Add(this.PlaatstxtKlant);
             this.Klantentab.Controls.Add(this.FilterKlant);
-            this.Klantentab.Controls.Add(this.textBox3);
-            this.Klantentab.Controls.Add(this.textBox1);
-            this.Klantentab.Controls.Add(this.textBox2);
+            this.Klantentab.Controls.Add(this.AchternaamtxtKlant);
+            this.Klantentab.Controls.Add(this.VerzekeringsidtxtKlant);
+            this.Klantentab.Controls.Add(this.VoornaamtxtKlant);
             this.Klantentab.Controls.Add(this.label4);
             this.Klantentab.Location = new System.Drawing.Point(4, 22);
             this.Klantentab.Name = "Klantentab";
@@ -375,11 +375,10 @@
             this.Klantentab.TabIndex = 0;
             this.Klantentab.Text = "Klanten";
             this.Klantentab.UseVisualStyleBackColor = true;
-            this.Klantentab.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // Artsentab
             // 
-            this.Artsentab.Controls.Add(this.dataGridView2);
+            this.Artsentab.Controls.Add(this.ArtsenGridview);
             this.Artsentab.Controls.Add(this.MaakArts);
             this.Artsentab.Controls.Add(this.label2);
             this.Artsentab.Controls.Add(this.FilterArts);
@@ -395,7 +394,7 @@
             // 
             // Medicatietab
             // 
-            this.Medicatietab.Controls.Add(this.dataGridView3);
+            this.Medicatietab.Controls.Add(this.MedicatieGridView);
             this.Medicatietab.Controls.Add(this.BewerkMedicatie);
             this.Medicatietab.Controls.Add(this.label3);
             this.Medicatietab.Controls.Add(this.VerwijderMedicatie);
@@ -418,9 +417,9 @@
             this.Name = "Form1";
             this.Text = "Gezondheidszorg Database applicatie";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KlantenGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ArtsenGridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MedicatieGridView)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.Klantentab.ResumeLayout(false);
             this.Klantentab.PerformLayout();
@@ -434,13 +433,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView KlantenGridView;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView ArtsenGridview;
         private System.Windows.Forms.Button VerwijderKlant;
         private System.Windows.Forms.Button BewerkKlant;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView MedicatieGridView;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BewerkArts;
         private System.Windows.Forms.Button VerwijderArts;
@@ -452,12 +451,12 @@
         private System.Windows.Forms.Button MaakMedicatie;
         private System.Windows.Forms.Button MaakKlant;
         private System.Windows.Forms.Button FilterKlant;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox VerzekeringsidtxtKlant;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox VoornaamtxtKlant;
+        private System.Windows.Forms.TextBox AchternaamtxtKlant;
+        private System.Windows.Forms.TextBox PlaatstxtKlant;
+        private System.Windows.Forms.TextBox AdrestxtKlant;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;

@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
             // k.Adres = "Mogool 10";
             // con.klanten.Add(k);
             // con.SaveChanges();
-            dataGridView1.DataSource = con.klanten.Select(p => new {
+            KlantenGridView.DataSource = con.klanten.Select(p => new {
                 KlantID = p.KlantID,
                 ArtsID = p.ArtsID,
                 VerzekeringsID = p.VerzekeringsID,
@@ -37,9 +37,9 @@ namespace WindowsFormsApp1
                 Plaats = p.Plaats
             }).OrderBy(p => p.Achternaam).ToList();
 
-            dataGridView1.Columns["KlantID"].Visible = false;
-            dataGridView1.Columns["ArtsID"].Visible = false;
-            dataGridView1.Columns["VerzekeringsID"].Visible = false;
+            KlantenGridView.Columns["KlantID"].Visible = false;
+            KlantenGridView.Columns["ArtsID"].Visible = false;
+            KlantenGridView.Columns["VerzekeringsID"].Visible = false;
         }
 
 
@@ -50,7 +50,28 @@ namespace WindowsFormsApp1
 
         private void MaakKlant_Click(object sender, EventArgs e)
         {
-            database klant = new database();
+            string voornaam = VoornaamtxtKlant.Text;
+            string achternaam = VoornaamtxtKlant.Text;
+            string verzekeringsid = VoornaamtxtKlant.Text;
+            string plaats = VoornaamtxtKlant.Text;
+            string adres = VoornaamtxtKlant.Text;
+            Database klantdb = new Database();
+
+            if (verzekeringsid != null && voornaam != null && achternaam != null && plaats != null && adres != null)
+            {
+                Klanten k = new Klanten();
+                k.Voornaam = voornaam;
+                k.Achternaam = achternaam;
+                k.Adres = adres;
+                k.Plaats = plaats;
+
+                klantdb.klanten.Add(k);
+                klantdb.SaveChanges();
+                KlantenGridView.DataSource = klantdb.Klanten.ToList();
+
+                voornaam = ""; achternaam = ""; verzekeringsid = ""; plaats = ""; adres = "";
+                klantdb.Items.Add(voornaam);
+            }
 
         }
 
@@ -105,11 +126,6 @@ namespace WindowsFormsApp1
         }
 
         private void VerwijderMedicatie_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }
