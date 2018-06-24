@@ -50,6 +50,7 @@ namespace WindowsFormsApp1
 
         private void MaakKlant_Click(object sender, EventArgs e)
         {
+            database klant = new database();
 
         }
 
@@ -104,6 +105,11 @@ namespace WindowsFormsApp1
         }
 
         private void VerwijderMedicatie_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }
