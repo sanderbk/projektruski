@@ -149,6 +149,7 @@
             this.BewerkArts.TabIndex = 13;
             this.BewerkArts.Text = "Edit";
             this.BewerkArts.UseVisualStyleBackColor = true;
+            this.BewerkArts.Click += new System.EventHandler(this.BewerkArts_Click);
             // 
             // VerwijderArts
             // 
@@ -158,6 +159,7 @@
             this.VerwijderArts.TabIndex = 12;
             this.VerwijderArts.Text = "Remove";
             this.VerwijderArts.UseVisualStyleBackColor = true;
+            this.VerwijderArts.Click += new System.EventHandler(this.VerwijderArts_Click);
             // 
             // FilterArts
             // 
@@ -167,6 +169,7 @@
             this.FilterArts.TabIndex = 11;
             this.FilterArts.Text = "Filter";
             this.FilterArts.UseVisualStyleBackColor = true;
+            this.FilterArts.Click += new System.EventHandler(this.FilterArts_Click);
             // 
             // MaakArts
             // 
@@ -176,6 +179,7 @@
             this.MaakArts.TabIndex = 10;
             this.MaakArts.Text = "Add";
             this.MaakArts.UseVisualStyleBackColor = true;
+            this.MaakArts.Click += new System.EventHandler(this.MaakArts_Click);
             // 
             // BewerkMedicatie
             // 
@@ -185,6 +189,7 @@
             this.BewerkMedicatie.TabIndex = 17;
             this.BewerkMedicatie.Text = "Edit";
             this.BewerkMedicatie.UseVisualStyleBackColor = true;
+            this.BewerkMedicatie.Click += new System.EventHandler(this.BewerkMedicatie_Click);
             // 
             // VerwijderMedicatie
             // 
@@ -194,6 +199,7 @@
             this.VerwijderMedicatie.TabIndex = 16;
             this.VerwijderMedicatie.Text = "Remove";
             this.VerwijderMedicatie.UseVisualStyleBackColor = true;
+            this.VerwijderMedicatie.Click += new System.EventHandler(this.VerwijderMedicatie_Click);
             // 
             // FilterMedicatie
             // 
@@ -203,6 +209,7 @@
             this.FilterMedicatie.TabIndex = 15;
             this.FilterMedicatie.Text = "Filter";
             this.FilterMedicatie.UseVisualStyleBackColor = true;
+            this.FilterMedicatie.Click += new System.EventHandler(this.FilterMedicatie_Click);
             // 
             // MaakMedicatie
             // 
@@ -212,6 +219,7 @@
             this.MaakMedicatie.TabIndex = 14;
             this.MaakMedicatie.Text = "Add";
             this.MaakMedicatie.UseVisualStyleBackColor = true;
+            this.MaakMedicatie.Click += new System.EventHandler(this.MaakMedicatie_Click);
             // 
             // MaakKlant
             // 

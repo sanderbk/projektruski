@@ -58,5 +58,54 @@ namespace WindowsFormsApp1
 
         }
 
+        private void BewerkKlant_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VerwijderKlant_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MaakArts_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FilterArts_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BewerkArts_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VerwijderArts_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MaakMedicatie_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FilterMedicatie_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BewerkMedicatie_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VerwijderMedicatie_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
