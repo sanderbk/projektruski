@@ -12,9 +12,9 @@ namespace WindowsFormsApp1
     {
         [Key]
         public int ArtsID { get; set; }
-        public string Naam { get; set; }
-        public string Adres { get; set; }
-        public string Postcode { get; set; }
+        public string Voornaam { get; set; }
+        public string Achternaam { get; set; }
         public DateTime Einddatum { get; set; }
+        public List<Klanten> Klanten { get; set; }
     }
 }

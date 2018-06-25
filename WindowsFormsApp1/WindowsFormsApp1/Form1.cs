@@ -21,6 +21,46 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            getDataKlant();
+            getDataArts();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+
+            form2.Show();
+            
+        }
+
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            var query = from Klanten in con.klanten
+                        where Klanten.Voornaam.Contains(textBox1.Text)
+                        select Klanten;
+
+            dataGridView1.DataSource = query.ToList();
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void getDataArts()
+        {
+            dataGridView2.DataSource = con.arts.Select(a => new {
+                ArtsID = a.ArtsID,
+                Voornaam = a.Voornaam,
+                Achternaam = a.Achternaam,
+                Einddatum = a.Einddatum,
+                Klanten = a.Klanten,
+            }).OrderBy(p => p.Achternaam).ToList();
+        }
+
+        private void getDataKlant()
+        {
             // Klanten k = new Klanten();
             // k.Naam = "Sander Baak";
             // k.Plaats = "Alkmaar";
@@ -29,7 +69,6 @@ namespace WindowsFormsApp1
             // con.SaveChanges();
             dataGridView1.DataSource = con.klanten.Select(p => new {
                 KlantID = p.KlantID,
-                ArtsID = p.ArtsID,
                 VerzekeringsID = p.VerzekeringsID,
                 Voornaam = p.Voornaam,
                 Achternaam = p.Achternaam,
@@ -38,13 +77,17 @@ namespace WindowsFormsApp1
             }).OrderBy(p => p.Achternaam).ToList();
 
             dataGridView1.Columns["KlantID"].Visible = false;
-            dataGridView1.Columns["ArtsID"].Visible = false;
+
             dataGridView1.Columns["VerzekeringsID"].Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void txtSearchArts_TextChanged(object sender, EventArgs e)
         {
+            var query = from Arts in con.arts
+                        where Arts.Voornaam.Contains(txtSearchArts.Text)
+                        select Arts;
 
+            dataGridView2.DataSource = query.ToList();
         }
     }
 }
